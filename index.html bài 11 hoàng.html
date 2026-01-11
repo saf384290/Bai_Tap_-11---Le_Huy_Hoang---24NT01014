@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Thế Giới Động Vật</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- 24NT01014 - Lê Huy Hoàng - Bài 11 -->
+<header>
+<h1>Thế Giới Động Vật</h1>
+</header>
+<div class="container">
+<h2>Danh sách con vật</h2>
+<div class="animal-list" id="animalList"></div>
+</div>
+<!-- Footer dùng chung -->
+<div id="footer-placeholder"></div>
+<script>
+fetch("footer.html")
+.then(res => res.text())
+.then(data => document.getElementById("footer-placeholder").innerHTML = data);
+</script>
+<script src="script.js"></script>
+</body>
+</html>
